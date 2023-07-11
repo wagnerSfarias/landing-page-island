@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import ContainerImages from '../../components/ContainerImages'
 import Paradise from '../../assets/paradise.jpg'
 
 import {
@@ -72,6 +73,7 @@ export default function Home() {
         </ContainerText>
 
         <BackgroundTwo />
+        <ContainerImages />
       </Main>
       <Footer />
     </Container>
