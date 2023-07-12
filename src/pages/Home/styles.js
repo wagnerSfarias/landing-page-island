@@ -150,21 +150,32 @@ export const Text = styled.p`
   }
 `
 export const BackgroundOne = styled.div`
-  width: 100%;
+  /* width: 100%; */
   height: 80vh;
   overflow: hidden;
-  background-position: 50% 50%;
+  /* background-position: 50% 50%; */
+  background-position: center top;
   background-image: url(${FlorestImg});
   background-size: cover;
   background-attachment: fixed;
+
+  @media screen and (max-width: 480px) {
+    background-attachment: scroll;
+    max-height: 450px;
+  }
 `
 export const BackgroundTwo = styled.div`
-  width: 100%;
+  /* width: 100%; */
   height: 80vh;
   background-position: 50% 50%;
   background-image: url(${BeachImg});
   background-size: cover;
   background-attachment: fixed;
+
+  @media screen and (max-width: 480px) {
+    background-attachment: scroll;
+    max-height: 450px;
+  }
 `
 export const ContainerImages = styled.div`
   width: 100%;
