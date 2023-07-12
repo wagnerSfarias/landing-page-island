@@ -2,10 +2,10 @@ import React from 'react'
 import { FaGoogle, FaFacebook, FaInstagram } from 'react-icons/fa'
 import {
   Container,
-  ContainerIcons,
   Icons,
   Detail,
   DetailText,
+  ContainerContacts,
   Logo,
 } from './styles'
 
@@ -18,18 +18,18 @@ export default function Footer() {
         <Logo src={LogoImg} />
         <DetailText>
           <p>Rua Principal, 01</p>
-          <p>+55 132 5585-4447</p>
+          <p>+32 132 558 544 497</p>
           <p>paraiso@tropical.com</p>
         </DetailText>
       </Detail>
-      <ContainerIcons>
+      <ContainerContacts>
         CopyRight &copy; 2020
         <Icons>
           <FaGoogle />
           <FaFacebook />
           <FaInstagram />
         </Icons>
-      </ContainerIcons>
+      </ContainerContacts>
     </Container>
   )
 }

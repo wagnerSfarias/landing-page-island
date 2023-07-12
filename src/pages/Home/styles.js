@@ -4,11 +4,14 @@ import BeachImg from '../../assets/beach.jpg'
 
 const rotate = keyframes`
   0% {
-            transform: translateX(-300px);
-            opacity: 0;
+      -webkit-transform: translateX(-300px);
+      transform: translateX(-300px);
+      opacity: 0;
   }
   100% {
-            transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
 `
 export const Container = styled.div`
@@ -20,8 +23,13 @@ export const Main = styled.div`
 `
 export const Presentation = styled.div`
   background: #fff;
-  height: 40vh;
+  min-height: 300px;
   position: relative;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 export const Strip = styled.div`
   background: #4798cd;
@@ -30,7 +38,7 @@ export const Strip = styled.div`
   position: absolute;
   right: 15%;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     height: 50px;
     bottom: 20%;
@@ -51,28 +59,71 @@ export const ContainerPresentation = styled.div`
 
   p {
     line-height: 28px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     width: 70%;
     margin-top: 10px;
   }
+
+  @media screen and (max-width: 970px) {
+    padding-top: 40px;
+    padding-left: 10px;
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      line-height: 24px;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      line-height: 20px;
+      font-size: 16px;
+    }
+  }
 `
 export const ImageBeach = styled.img`
-  width: 400px;
+  max-width: 350px;
   position: absolute;
   bottom: 10%;
   right: 3%;
   border-radius: 10px;
   box-shadow: -3px 4px 20px 10px rgba(0, 0, 0, 0.6);
-`
 
+  @media screen and (max-width: 970px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 768px) {
+    box-shadow: -3px 4px 20px 5px rgba(0, 0, 0, 0.6);
+    position: static;
+    z-index: 99;
+    align-self: flex-end;
+    width: 250px;
+    margin: 10px 10px 20px;
+  }
+`
 export const ContainerText = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 20vh;
   height: auto;
-  padding: 15px 0 10px 50px;
+  padding: 15px 0;
 `
 export const Text = styled.p`
   animation-name: ${props => (props.animationText ? rotate : 'none')};
@@ -86,8 +137,18 @@ export const Text = styled.p`
   font-size: 20px;
   font-weight: 300;
   height: 90%;
-`
 
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    line-height: 25px;
+    font-size: 18px;
+    animation: none;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+`
 export const BackgroundOne = styled.div`
   width: 100%;
   height: 80vh;
@@ -104,4 +165,17 @@ export const BackgroundTwo = styled.div`
   background-image: url(${BeachImg});
   background-size: cover;
   background-attachment: fixed;
+`
+export const ContainerImages = styled.div`
+  width: 100%;
+  padding: 10% 1%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 `
