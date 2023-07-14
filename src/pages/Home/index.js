@@ -56,9 +56,9 @@ export default function Home() {
 
         <ContainerText>
           <Text animationText={animation}>
-            Essa ilha possui uma área de 90 KM<sup>2</sup> com 60% do seu espaço
-            composta por uma floresta densa formada por diversas espécies de
-            plantas.
+            Essa ilha possui uma área de 90 KM<sup>2</sup>, com 60% do seu
+            espaço composta por uma floresta densa, formada por diversas
+            espécies de plantas.
           </Text>
         </ContainerText>
 
@@ -66,9 +66,10 @@ export default function Home() {
 
         <ContainerText>
           <Text animationText={animationTwo}>
-            Já os outros 40% é composta por praias desertas com vistas incríveis
-            e um mar calmo, maioria delas são de fácil acesso por trilhas que
-            variam de leves e de curta duração até mais extensas com obstáculos.
+            Já os outros 40%, é composta por praias desertas com vistas
+            incríveis e um mar calmo, a maioria delas são de fácil acesso por
+            trilhas, que variam de leves e de curta duração até mais extensas
+            com obstáculos.
           </Text>
         </ContainerText>
 
