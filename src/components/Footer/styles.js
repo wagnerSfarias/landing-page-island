@@ -35,12 +35,12 @@ export const ContainerContacts = styled.div`
   width: 80%;
   margin: 10px auto 0;
   padding: 10px 50px 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 
   @media screen and (max-width: 768px) {
     padding: 10px 0px 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
 `
 export const Icons = styled.div`
