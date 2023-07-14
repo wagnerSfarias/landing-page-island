@@ -23,7 +23,7 @@ export default function Footer() {
         </DetailText>
       </Detail>
       <ContainerContacts>
-        CopyRight &copy; 2020
+        CopyRight &copy; 2023
         <Icons>
           <FaGoogle />
           <FaFacebook />
