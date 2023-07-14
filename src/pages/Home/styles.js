@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 import FlorestImg from '../../assets/florest.jpg'
 import BeachImg from '../../assets/beach.jpg'
 
-const rotate = keyframes`
+const slideRight = keyframes`
   0% {
       -webkit-transform: translateX(-300px);
       transform: translateX(-300px);
@@ -40,7 +40,7 @@ export const Strip = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
-    height: 50px;
+    height: 40px;
     bottom: 20%;
     right: 0%;
   }
@@ -114,7 +114,7 @@ export const ImageBeach = styled.img`
     z-index: 99;
     align-self: flex-end;
     width: 250px;
-    margin: 10px 10px 20px;
+    margin: 10px 10px 40px;
   }
 `
 export const ContainerText = styled.div`
@@ -126,7 +126,7 @@ export const ContainerText = styled.div`
   padding: 15px 0;
 `
 export const Text = styled.p`
-  animation-name: ${props => (props.animationText ? rotate : 'none')};
+  animation-name: ${props => (props.animationText ? slideRight : 'none')};
   animation-duration: 4s;
   animation-timing-function: linear;
 
@@ -150,10 +150,8 @@ export const Text = styled.p`
   }
 `
 export const BackgroundOne = styled.div`
-  /* width: 100%; */
   height: 80vh;
   overflow: hidden;
-  /* background-position: 50% 50%; */
   background-position: center top;
   background-image: url(${FlorestImg});
   background-size: cover;
@@ -165,9 +163,8 @@ export const BackgroundOne = styled.div`
   }
 `
 export const BackgroundTwo = styled.div`
-  /* width: 100%; */
   height: 80vh;
-  background-position: 50% 50%;
+  background-position: center top;
   background-image: url(${BeachImg});
   background-size: cover;
   background-attachment: fixed;
