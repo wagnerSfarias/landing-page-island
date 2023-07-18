@@ -150,9 +150,9 @@ export const Text = styled.p`
   }
 `
 export const BackgroundOne = styled.div`
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
-  background-position: center top;
+  background-position: center bottom;
   background-image: url(${FlorestImg});
   background-size: cover;
   background-attachment: fixed;
@@ -163,8 +163,9 @@ export const BackgroundOne = styled.div`
   }
 `
 export const BackgroundTwo = styled.div`
-  height: 80vh;
-  background-position: center top;
+  height: 90vh;
+  overflow: hidden;
+  background-position: center bottom;
   background-image: url(${BeachImg});
   background-size: cover;
   background-attachment: fixed;
