@@ -3,7 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   padding-top: 20px;
-  background: #4798cd;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 1) 5%,
+    rgba(71, 152, 205, 1) 70%
+  );
 `
 export const Detail = styled.div`
   display: flex;
@@ -47,19 +51,19 @@ export const Icons = styled.div`
   display: flex;
   gap: 20px;
   font-size: 25px;
-  color: #fff;
+  color: #231f20;
 
   svg {
     transition: all 450ms ease-out;
     cursor: pointer;
     &:hover {
       transform: scale(1.3);
-      color: #000;
+      color: #d9d9d9;
     }
     @media screen and (max-width: 768px) {
       &:hover {
         transform: none;
-        color: #fff;
+        color: #231f20;
       }
     }
   }
