@@ -31,12 +31,12 @@ export const ContainerTitle = styled.div`
 export const Title = styled.div`
   color: #fff;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 3%;
 
   h1 {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 300;
   }
   h2 {
     font-size: 25px;
@@ -49,6 +49,7 @@ export const Title = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
+    top: 10%;
     h1 {
       font-size: 30px;
     }

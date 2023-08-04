@@ -22,7 +22,7 @@ export const Main = styled.div`
   background: #d9d9d9;
 `
 export const Presentation = styled.div`
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   min-height: 300px;
   position: relative;
 
@@ -173,18 +173,5 @@ export const BackgroundTwo = styled.div`
   @media screen and (max-width: 480px) {
     background-attachment: scroll;
     max-height: 450px;
-  }
-`
-export const ContainerImages = styled.div`
-  width: 100%;
-  padding: 10% 1%;
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-
-  @media screen and (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
   }
 `
