@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaGoogle, FaFacebook, FaInstagram } from 'react-icons/fa'
 import {
   Container,
   Icons,
@@ -8,7 +7,7 @@ import {
   ContainerContacts,
   Logo,
 } from './styles'
-
+import { Home, Phone, Marker, Google, Instagram, Facebook } from './icons'
 import LogoImg from '../../assets/logo.svg'
 
 export default function Footer() {
@@ -17,17 +16,26 @@ export default function Footer() {
       <Detail>
         <Logo src={LogoImg} />
         <DetailText>
-          <p>Rua Principal, 01</p>
-          <p>+32 132 558 544 497</p>
-          <p>paraiso@tropical.com</p>
+          <p>
+            <Home />
+            Ilha da magia, 200 - Paraíso
+          </p>
+          <p>
+            <Phone />
+            +32 132 558 544 497
+          </p>
+          <p>
+            <Marker />
+            paraiso@tropical.com
+          </p>
         </DetailText>
       </Detail>
       <ContainerContacts>
         CopyRight &copy; 2023
         <Icons>
-          <FaGoogle />
-          <FaFacebook />
-          <FaInstagram />
+          <Google />
+          <Facebook />
+          <Instagram />
         </Icons>
       </ContainerContacts>
     </Container>

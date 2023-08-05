@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Detail = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 0 5% 0 10%;
 `
 export const DetailText = styled.div`
   display: flex;
@@ -30,6 +30,10 @@ export const DetailText = styled.div`
 `
 export const Logo = styled.img`
   max-height: 120px;
+
+  @media screen and (max-width: 480px) {
+    max-height: 90px;
+  }
 `
 export const ContainerContacts = styled.div`
   display: flex;
@@ -52,19 +56,4 @@ export const Icons = styled.div`
   gap: 20px;
   font-size: 25px;
   color: #231f20;
-
-  svg {
-    transition: all 450ms ease-out;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.3);
-      color: #d9d9d9;
-    }
-    @media screen and (max-width: 768px) {
-      &:hover {
-        transform: none;
-        color: #231f20;
-      }
-    }
-  }
 `
