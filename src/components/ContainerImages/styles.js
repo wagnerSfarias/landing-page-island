@@ -13,15 +13,34 @@ export const Container = styled.div`
     gap: 20px;
   }
 `
-export const CardImages = styled.img`
+export const CardImages = styled.div`
+  max-height: 300px;
+
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 8px;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    p {
+      font-size: 16px;
+    }
+  }
+`
+export const Image = styled.img`
   max-height: 250px;
-  box-shadow: 1px 20px 10px 3px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  overflow: hidden;
 
   @media screen and (max-width: 480px) {
     max-width: 250px;
     border-radius: 5px;
-    box-shadow: 5px 10px 10px 3px rgba(0, 0, 0, 0.5);
   }
 `
