@@ -1,8 +1,7 @@
-🚧 Em desenvolvimento 🚧
 
 <h1 align="center">Landing page Ilha da Magia</h1>
  
-<a href="https://ilha-da-magia.netlify.app" 
+Confira a aplicação aqui. <a href="https://ilha-da-magia.netlify.app" 
 target="_blank">Link Deploy🔗</a>
 <br><br>
 ## Layout 💻
